@@ -22,8 +22,8 @@ def euler(y,w):                     #Función del algoritmo
 
 for i in range(n):
     s, wi = euler(yo[i],wi)
-    np.append(yo,s)
-    np.append(t,t[i]+h)
+    yo = np.append(yo,s)
+    t = np.append(t,t[i]+h)
 
 fig, ax = plt.subplots()
 ax.plot(t, yo)
